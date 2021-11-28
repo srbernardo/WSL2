@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <form name="calc">        
+        <input type="text" id="display" disabled>
+        <br>    
+        <input type="button" value="1" onclick="document.calc.display.value += value">
+        <input type="button" value="2" onclick="document.calc.display.value += value">
+        <input type="button" value="3" onclick="document.calc.display.value += value">
+        <input type="button" value="C" onclick="document.calc.display.value = ''">
+        <br>    
+        <input type="button" value="5" onclick="document.calc.display.value += value">
+        <input type="button" value="6" onclick="document.calc.display.value += value">
+        <input type="button" value="7" onclick="document.calc.display.value += value">
+        <input type="button" value="+" onclick="document.calc.display.value += value">
+        <br>
+        <input type="button" value="8" onclick="document.calc.display.value += value">
+        <input type="button" value="9" onclick="document.calc.display.value += value">
+        <input type="button" value="6" onclick="document.calc.display.value += value">                    
+        <input type="button" value="-" onclick="document.calc.display.value += value">                    
+        <br>
+        <input type="button" value="." onclick="document.calc.display.value += value">
+        <input type="button" value="0" onclick="document.calc.display.value += value">
+        <input type="button" value="/" onclick="document.calc.display.value += value">                    
+        <input type="button" value="*" onclick="document.calc.display.value += value">                    
+        <br>
+        <input type="button" value="=" onclick="document.calc.display.value = eval(document.calc.display.value)">
+    </form>
+    <script src="js.js"></script>
+</body>
+</html>

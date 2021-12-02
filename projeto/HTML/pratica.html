@@ -1,0 +1,36 @@
+<body>
+    <script src="../JS/pratica.js"></script>
+    <form action="">
+        <input 
+            type="text"
+            list="lista"
+            placeholder="escolha"
+        >
+    
+        <datalist id = "lista" >
+            <option>ola</option>
+            <option value="manhã"></option>
+            <option value="noite"></option>
+            <option value="dia"></option>
+            <option value="ola"></option>
+        </datalist>
+
+        <select id = "lista" >
+            <option>selecione</option>
+            <option value="manhã">am</option>
+            <option value="noite">noite</option>
+            <option value="dia">pm</option>
+            <option value="ola">ola</option>
+        </select>
+    
+        <input 
+            type="password" 
+            pattern="[0-9a-zA-Z]{4,8}" 
+            size="8" maxlength="8"
+            required
+            inputmode="numeric"
+            autocomplete="on"
+            title="Letras maiuculas , menusculas e numeros">
+        <button type="submit">vai la</button>
+    </form>
+</body>

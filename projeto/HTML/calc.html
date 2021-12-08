@@ -5,33 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="shortcut icon" href="../src/calculator-svgrepo-com.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/calc.css">
 </head>
 <body>
-    <form name="calc">        
-        <input type="text" id="display" disabled>
-        <br>    
-        <input type="button" value="1" onclick="document.calc.display.value += value">
-        <input type="button" value="2" onclick="document.calc.display.value += value">
-        <input type="button" value="3" onclick="document.calc.display.value += value">
-        <input type="button" value="C" onclick="document.calc.display.value = ''">
-        <br>    
-        <input type="button" value="5" onclick="document.calc.display.value += value">
-        <input type="button" value="6" onclick="document.calc.display.value += value">
-        <input type="button" value="7" onclick="document.calc.display.value += value">
-        <input type="button" value="+" onclick="document.calc.display.value += value">
-        <br>
-        <input type="button" value="8" onclick="document.calc.display.value += value">
-        <input type="button" value="9" onclick="document.calc.display.value += value">
-        <input type="button" value="6" onclick="document.calc.display.value += value">                    
-        <input type="button" value="-" onclick="document.calc.display.value += value">                    
-        <br>
-        <input type="button" value="." onclick="document.calc.display.value += value">
-        <input type="button" value="0" onclick="document.calc.display.value += value">
-        <input type="button" value="/" onclick="document.calc.display.value += value">                    
-        <input type="button" value="*" onclick="document.calc.display.value += value">                    
-        <br>
-        <input type="button" value="=" onclick="document.calc.display.value = eval(document.calc.display.value)">
+    <form name="calc" class="corpo">
+        <div class="teclado">
+            <input type="text" id="display" class="display" readonly>
+            
+            <input type="button" value="7" onclick="digitar(value)">
+            <input type="button" value="8" onclick="digitar(value)">
+            <input type="button" value="9" onclick="digitar(value)">                    
+            <input class="operador" type="button" value="-" onclick="digitar(value)">
+            
+            <input type="button" value="4" onclick="digitar(value)">
+            <input type="button" value="5" onclick="digitar(value)">
+            <input type="button" value="6" onclick="digitar(value)">
+            <input class="operador" type="button" value="+" onclick="digitar(value)">
+        
+            <input type="button" value="1" onclick="digitar(value)">
+            <input type="button" value="2" onclick="digitar(value)">
+            <input type="button" value="3" onclick="digitar(value)">
+            <input class="operador" type="button" value="/" onclick="digitar(value)">                    
+        
+            <input type="button" value="." onclick="digitar(value)">
+            <input type="button" value="0" onclick="digitar(value)">
+            <input type="button" value="C" onclick="apagar()">
+            <input class="operador" type="button" value="*" onclick="digitar(value)">
+                  
+            <input class="result" type="button" value="=" onclick="document.calc.display.value = eval(document.calc.display.value)">               
+        </div>        
+    <script src="../JS/js.js"></script>
     </form>
-    <script src="js.js"></script>
 </body>
 </html>

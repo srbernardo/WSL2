@@ -33,3 +33,11 @@ console.log(classic)
 let coisa = 12
 
 coisa.__proto__
+
+let lista = ["fruta","morango","banana"]
+
+for (const itemDaLista of lista) {
+    console.log(itemDaLista)
+    
+}
+

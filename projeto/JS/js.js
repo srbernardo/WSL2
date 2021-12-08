@@ -1,7 +1,7 @@
 // let s = document.getElementById("btn").value
 
 function digitar(valor){
-    document.calc.display.value += valor
+    document.calc.display.value += valor    
 }
 
 function soma(){

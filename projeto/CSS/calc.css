@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 400;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgb(24, 82, 80),gray);
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.teclado{
+    box-sizing: border-box;
+    width: 25%;
+    min-height: 450px;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0,10);
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+}
+
+input{   
+    cursor: pointer;
+    width: 24%;
+    height: 70px;
+    margin: auto;
+    color: cornsilk;    
+    border-top: solid 1px rgb(70, 70, 70);
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px rgb(70, 70, 70);
+    background-color: rgb(138, 138, 138);
+}
+
+.operador{
+    background-color: orange;
+}
+
+.result{
+    background-color: orange;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.display{    
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    background-color: rgb(70, 70, 70);
+    border: none;
+    outline: none;
+    cursor:text;
+
+}
+
+@media(max-width: 1140px){
+    .teclado{        
+        width: 40%;
+        align-items: center;
+    }
+
+    input{
+        width: 23%;
+    }
+}

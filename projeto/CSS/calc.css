@@ -22,7 +22,15 @@ body{
 }
 
 .teclado{
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1px;
+    align-content:flex-end ;   
     width: 25%;
     min-height: 450px;
     box-shadow: 0px 25px 50px rgba(0, 0, 0,10);
@@ -36,20 +44,24 @@ input{
     height: 70px;
     margin: auto;
     color: cornsilk;    
-    border-top: solid 1px rgb(70, 70, 70);
-    border-left: none;
-    border-right: none;
-    border-bottom: solid 1px rgb(70, 70, 70);
+    margin: 0;
+    border: 0;
+    outline: 0;
+    justify-content:center;    
     background-color: rgb(138, 138, 138);
 }
 
 .operador{
     background-color: orange;
+    border: none;
+    outline: none;
 }
 
 .result{
+    border: none;
+    outline: none;
     background-color: orange;
-    width: 100%;
+    width: 97.5%;
     border-radius: 0px 0px 5px 5px;
     height: 15vh;
 }
@@ -64,7 +76,9 @@ input{
     border: none;
     outline: none;
     cursor:text;
-
+    border: none;
+    outline: none;
+    
 }
 
 @media(max-width: 1140px){
@@ -72,8 +86,12 @@ input{
         width: 40%;
         align-items: center;
     }
-
+    
     input{
         width: 23%;
+    }
+    
+    .result{        
+        width: 93%;      
     }
 }

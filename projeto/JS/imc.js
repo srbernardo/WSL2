@@ -10,7 +10,7 @@ function imc() {
 
 
     if(media < 18.5) {
-        mess = "a baixo do peso! "
+        mess = "a baixo do peso! g"
     } else if (media >= 18.5 && media < 24.9) {
         mess = "no peso normal! "
     } else if (media >= 24.9 && media < 29.9) {

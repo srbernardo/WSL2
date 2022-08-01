@@ -8,30 +8,24 @@ html{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(rgb(89, 37, 97),rgb(114, 78, 144));
+    display: flex;
+    justify-content: center;
 }
 body{
     display: flex;
-    justify-content: center;   
-    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
 
-main{
-    height: 400px;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+.corpo{
     background: rgb(13, 13, 31);
     font-family: sans-serif;
     border-radius: 30px;
     box-shadow: 4px 4px 8px black;
-}
-
-.corpo{
-    min-height: 100vh;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
-
 
 .title{
     display: flex;
@@ -56,15 +50,12 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 input{
-    display: flex;
-    justify-content: space-between;
-    height: 25px;
-    width: 100px;
-    margin-left: 50px;    
+    width: 110px;
     color: rgb(236, 0, 185);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-align: center;
+    display: flex;
 }
 
 button{
@@ -84,9 +75,12 @@ button:hover{
 }
 
 .resul{
-    padding: 30px;    
+    padding: 30px;
+    margin: auto;    
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-align: center;
     color: rgb(236, 0, 185);
+    width: 200px;
+    line-height: 16px;
 }

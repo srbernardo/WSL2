@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../src/rock-paper-scissors-vector-icons.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/jokenpo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <title>Jokenpo</title>
+</head>
+<body>
+  <div id="titulo">
+    <h1>Jokenpô</h1>    
+  </div>
+  <div id="placar">
+    <div id="jogador">
+      <h2 id="jogador-nome">Jogador</h2>
+      <span id="pontos-jogador">0</span>
+      <ul id="jogador-escolha">
+        <li> <a id="jogador-1" > <img src="../src/pedra.png" alt="pedra"> </a> </li>
+        <li> <a id="jogador-2" > <img src="../src/papel.png" alt="pedra"> </a> </li>
+        <li> <a id="jogador-3"> <img src="../src/tesoura.png" alt="pedra"> </a> </li>
+      </ul>
+    </div>
+    <div id="vs">vs</div>
+    <div id="cpu">
+      <h2 id="cpu-nome">Computador</h2>
+      <span id="pontos-cpu">0</span>
+      <ul id="cpu-escolha">
+        <li id="cpu-1" > <img src="../src/pedra.png" alt="pedra"> </a> </li>
+        <li id="cpu-2" > <img src="../src/papel.png" alt="pedra"> </a> </li>
+        <li id="cpu-3" > <img src="../src/tesoura.png" alt="pedra"> </a> </li>
+      </ul>
+    </div>
+  </div>
+  <div id="mensagem">
+    Bem-vindo jogador, está preparado ? Escolha sua jogada ...
+  </div>
+
+  <script src="../JS/jokenpo.js"></script>
+
+</body>
+</html>

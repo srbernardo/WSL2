@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+#titulo {
+  color: #273c75;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+#placar, #mensagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mensagem {
+  border-radius: 4px;
+  background-color: #7f8fab;
+  color: #f8f8f8;  
+  padding: 16px;
+  max-width: 95%;
+  margin: 0 auto
+}
+
+#vs {
+  color: #273c75;
+  margin: 16px;
+  font-size: 56px;
+}
+
+#cpu, #jogador {
+  flex-grow: 1;
+  color: #f8f8f8;
+  border-radius: 4px;
+  margin: 16px;
+  padding: 8px;
+  position: relative;
+
+}
+
+#cpu {
+  background-color: #ff7675;
+}
+#jogador {
+  background-color: #74b9ff;  
+}
+
+#jogador-escolha, #cpu-escolha {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#jogador-escolha li, #cpu-escolha li {
+  display: inline-block;
+  padding: 0 16px;
+  text-align: center;
+}
+
+#jogador-escolha img, #cpu-escolha img {
+  width: 80px;
+  padding-top: 64px;
+}
+
+#pontos-jogador, #pontos-cpu {
+  font-size: 48px;
+  padding: 8px;
+}
+
+#pontos-jogador, #cpu-nome {
+  position: absolute;
+  right: 8px;
+}
+#jogador-nome, #pontos-cpu {
+  position: absolute;
+  left: 8px;
+}
+
+#cpu-escolha, #jogador-escolha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#jogador-escolha a :hover, .selecionado {
+  opacity: 0.2;
+}
+
+
+
+

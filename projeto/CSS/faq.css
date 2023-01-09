@@ -5,7 +5,10 @@
 }
 
 html{
-    background: linear-gradient(mediumturquoise,gray) ;
+    background-image: url(../src/fundoFaq.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body{
@@ -32,7 +35,7 @@ main{
 .image{
     position: relative;
     left: -80px;
-    width: 30%;
+    width: 45%;
     margin: 50px 0;
 }
 
@@ -52,25 +55,33 @@ main{
     font-weight: 680;
 }
 
-
 .pergunta:hover{
-    color: gray;
+    opacity: 0.2;
 }
 
 .resp{
-    border-bottom: 1px solid darkorange;
+    border-bottom: 1px solid rgb(255, 255, 255);
     margin: 10px;
     display: none;
     padding-bottom: 15px;
 }
 
-
 h1{
-    color: pink;
+    color: rgb(164, 166, 234);
 }
 
 h2{
     font-size: 20px;
+}
+
+.item.ativo h2{
+    font-weight: 900;
+    color: rgb(75, 75, 78);
+}
+
+.item.ativo p{
+    color: rgb(72, 71, 71);
+    display: block; 
 }
 
 @media(max-width: 1140px){
@@ -80,15 +91,23 @@ h2{
     }
 }
 
-.item.ativo h2{
-    font-weight: 900;
-    color: darkslateblue;
+@media(max-width: 750px){
+    .faq{
+        flex-direction: column;
+        width: 55%;
+    }
+
+    .pergunta {
+        font-size: 16px;
+    }
+
+    .resp {
+        font-size: 12px;
+    }
+
+    .conteudo {
+        overflow-y: auto;
+        width: 160px;
+    }
 }
-
-.item.ativo p{
-    color: darkred;
-    display: block; 
-}
-
-
 

@@ -83,14 +83,6 @@ input{
         display: flex;
         justify-content: center;
     }
-    
-    body{
-        width: 80%;
-    }
-
-    .corpo{       
-        width: 50%;
-    }
 
     .teclado {
         min-width: 50vw;
